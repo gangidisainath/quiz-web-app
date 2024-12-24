@@ -1,5 +1,4 @@
 from django.shortcuts import render,redirect
-from django.http import JsonResponse,HttpResponse
 from django import forms
 import random
 from django.contrib.auth.hashers import check_password
