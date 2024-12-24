@@ -1,0 +1,27 @@
+{% extends 'login.html' %}
+{% block head %}
+{% endblock %}
+  {% block content %}
+  
+        <h1>Quiz Questions</h1>
+        <form method="POST">
+          {% csrf_token %}
+         {% for i in qu %}   
+        <p style=" font-size: 25px;text-transform: capitalize;"> Q.{{forloop.counter}}: {{i.q.question}}</p>
+        
+              {% for j in i.ans %}
+              <div style="font-size: 20px;text-transform: capitalize;margin-left: 10%;">
+                <input type='radio' name="{{i.q.id}}"  value="{{j}}"/>
+            <label>{{j}}
+          </label>
+        </div>
+          {% endfor %}
+        
+          {% endfor %}
+           <br>
+           <div style="text-align: center;">
+            <button type="submit">submit answer</button>
+          </div>
+          </form>
+        
+        {% endblock %}         

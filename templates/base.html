@@ -1,0 +1,27 @@
+{% load static %}
+<!doctype html>
+<html>
+    <head >
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">      
+       <link rel='stylesheet' href="{% static 'css/base.css' %}">
+    </head>
+    <body class="base">
+        {% block head %}
+
+        {% endblock %}
+        
+        <nav class="base_nav">
+         
+            <a href='../admin/' >Admin Page</a>
+            <a href="{% url 'login' %}">Login</a>
+            <a href="{% url 'register' %}" >Register</a>
+          
+        </nav>
+        <div>
+            
+        {% block content %}
+
+        {% endblock %}
+    </div>
+         </body>
+</html>

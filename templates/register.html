@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+  {% block content %}
+  
+        <h1 > register</h1>
+        <div class="loginform">
+        <form method="post">
+            {% csrf_token %}
+            {{f.as_p}}
+            <input type="submit" name="submit">
+        </form>
+    </div>
+        {% endblock %}
+   

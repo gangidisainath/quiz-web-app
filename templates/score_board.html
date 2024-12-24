@@ -1,0 +1,11 @@
+{% extends 'login.html' %}
+{% block head %}
+<h1> score board</h1>
+{% endblock %}
+{% block content %}
+<div class="score">
+        <h2>{{user}} answered {{score}} questions correct.</h2>
+        <h4>Final Score: {{score}}/10</h4>
+</div>
+           {% endblock %}
+    

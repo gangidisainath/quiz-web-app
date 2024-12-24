@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<h1>PLEASE LOGIN</h1>
+{% endblock %}
+  {% block content %}
+  <div class="loginform">
+  
+    <form method="POST">
+     {% csrf_token %}
+      {{form.as_p}}
+      
+    <input type=submit style="font-size:120%">
+    </form>
+  </div>
+
+    {% endblock %}
