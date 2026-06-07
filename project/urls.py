@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path,include
 
 urlpatterns = [
+    path(''.RedirectView.as_view(url='quiz_app/',permanent=True)),
     path('admin/', admin.site.urls),
     path('quiz_app/',include('quiz_app.urls')),
 ]
