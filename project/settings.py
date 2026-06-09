@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     
 ]
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARD_PROTO', 'https')
-SECURE_SSL_REDIRECT=False
+SECURE_SSL_REDIRECT=True
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
