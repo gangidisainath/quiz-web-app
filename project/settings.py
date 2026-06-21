@@ -43,7 +43,13 @@ INSTALLED_APPS = [
     
 ]
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-SECURE_SSL_REDIRECT=True
+SECURE_SSL_REDIRECT = True
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
+SESSION_COOKIE_HTTPONLY = True
+CSRF_TRUSTED_ORIGINS = ['app-svc-sai7171-dev.apps.rm1.0a51.p1.openshiftapps.com']
+X_FRAME_OPTIONS = 'DENY'
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
