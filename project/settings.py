@@ -47,7 +47,7 @@ SECURE_SSL_REDIRECT = True
 CSRF_COOKIE_SECURE = True
 SESSION_COOKIE_SECURE = True
 SESSION_COOKIE_HTTPONLY = True
-CSRF_TRUSTED_ORIGINS = ['app-svc-sai7171-dev.apps.rm1.0a51.p1.openshiftapps.com']
+CSRF_TRUSTED_ORIGINS = ['https://app-svc-sai7171-dev.apps.rm1.0a51.p1.openshiftapps.com']
 X_FRAME_OPTIONS = 'DENY'
 
 MIDDLEWARE = [
