@@ -90,6 +90,7 @@ DATABASES = {
         
     },
     'auth_db': {
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': os.environ.get('auth_db_POSTGRESQL_DATABASE'),
         'USER': os.environ.get('auth_db_POSTGRESQL_USER'),
         'PASSWORD': os.environ.get('auth_db_POSTGRESQL_PASSWORD'),
